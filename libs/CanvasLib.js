@@ -32,7 +32,26 @@ const CanvasLib = {
       "#B100FE",
       "#FF006E",
     ];
+
+    // get random color
+    const a = [];
+    for (let i = 0; i < 16; i++) {
+      a.push([]);
+      for (let j = 0; j < 16; j++)
+        a[i][j] = colors[Math.floor(Math.random() * colors.length)]
+    }
+    return a;
   },
+
+  // createClearCanvas: () => {
+  //   const a = [];
+  //   for (let i = 0; i < 16; i++) {
+  //     a.push([]);
+  //     for (let j = 0; j < 16; j++)
+  //       a[i][j] = colors[Math.floor(Math.random() * colors.length)]
+  //   }
+  //   return a;
+  // },
 };
 
 export default CanvasLib;
